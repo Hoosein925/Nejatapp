@@ -4,13 +4,6 @@
  * ============================================================================
  */
 
-// نکته: تصاویر پشتیبان از پوشه public سرو می‌شوند (بدون import)، پس هرگز باعث خطای build نمی‌شوند.
-// فایل‌ها باید در public/images/ موجود باشند.
-export const LOCAL_IMAGE_FALLBACKS: Record<string, string> = {
-  chainOfSurvival: '/images/chain_of_survival.png',
-  cprRecovery: '/images/recovery.jpg',
-};
-
 export const APP_IMAGES = {
   // ۱. صفحه اصلی و مفاهیم کلی (زنجیره حیات ۵ حلقه)
   heroBanner: "",

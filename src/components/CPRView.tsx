@@ -22,6 +22,7 @@ import {
 import { sound } from '../utils/sound';
 import { AppTab } from '../types';
 import { EducationalVideoPlayer } from './common/EducationalVideoPlayer';
+import { AppImage } from './common/AppImage';
 import { APP_VIDEOS, APP_IMAGES } from '../config/images';
 
 interface CPRViewProps {
@@ -784,14 +785,14 @@ export const CPRView: React.FC<CPRViewProps> = ({ setTab }) => {
             </span>
           </div>
 
-          {/* Safe Recovery Image - Self-adjusting container with clean background */}
-          <div className="w-full rounded-2xl sm:rounded-3xl overflow-hidden bg-transparent flex items-center justify-center">
-            <img
-              src="/src/assets/images/recovery_position_safe_1791830021539.jpg"
-              alt="وضعیت ریکاوری استاندارد"
-              referrerPolicy="no-referrer"
-              className="w-full h-auto block select-none rounded-2xl sm:rounded-3xl"
-              loading="lazy"
+          {/* Safe Recovery Image - Self-adjusting container with clean background & zoom modal */}
+          <div className="w-full">
+            <AppImage
+              imageKey="cprRecovery"
+              alt="پوزیشن ریکاوری استاندارد (Recovery Position)"
+              title="مراحل گام‌به‌گام قرار دادن بیمار در پوزیشن ریکاوری"
+              subtitle="خواباندن مصدوم دارای تنفس به پهلو جهت باز ماندن راه هوایی و پیشگیری از خفگی با ترشحات"
+              allowZoom={true}
             />
           </div>
 

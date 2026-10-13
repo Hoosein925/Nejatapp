@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
-import { getAppImage, ImageKey, IMAGE_METADATA, LOCAL_IMAGE_FALLBACKS } from '../../config/images';
+import { getAppImage, ImageKey, IMAGE_METADATA } from '../../config/images';
 import { ImageIcon, AlertCircle, Maximize2, X, RefreshCw } from 'lucide-react';
 
 interface AppImageProps {
@@ -29,8 +29,7 @@ export const AppImage: React.FC<AppImageProps> = ({
   const [isZoomed, setIsZoomed] = useState(false);
 
   const initialUrl = getAppImage(imageKey);
-  const fallbackUrl = LOCAL_IMAGE_FALLBACKS[imageKey];
-  const [currentSrc, setCurrentSrc] = useState<string>(initialUrl || fallbackUrl || '');
+  const [currentSrc] = useState<string>(initialUrl || '');
 
   const meta = IMAGE_METADATA[imageKey];
   const displayTitle = title || meta?.title || alt;
@@ -59,12 +58,8 @@ export const AppImage: React.FC<AppImageProps> = ({
               decoding="async"
               onLoad={() => setIsLoading(false)}
               onError={() => {
-                if (fallbackUrl && currentSrc !== fallbackUrl) {
-                  setCurrentSrc(fallbackUrl);
-                } else {
-                  setIsLoading(false);
-                  setHasError(true);
-                }
+                setIsLoading(false);
+                setHasError(true);
               }}
               className={`w-full h-auto block select-none rounded-2xl sm:rounded-3xl transition-opacity duration-300 ${
                 isLoading ? 'opacity-0 h-0 overflow-hidden' : 'opacity-100'

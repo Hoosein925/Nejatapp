@@ -14,7 +14,7 @@ import { ChokingView } from './components/ChokingView';
 import { AEDView } from './components/AEDView';
 import { QuizView } from './components/QuizView';
 import { WifiOff, HeartPulse, Sparkles, CheckCircle2 } from 'lucide-react';
-import { APP_IMAGES } from './config/images';
+import { APP_IMAGES } from './config/appImages';
 
 const VALID_TABS: AppTab[] = ['home', 'intro', 'cpr', 'choking', 'aed', 'quiz'];
 

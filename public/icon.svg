@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="100" fill="#0284c7"/>
+  <circle cx="256" cy="256" r="210" fill="#0369a1"/>
+  <!-- Medical Star of Life or Cross in White with Heart & Pulse -->
+  <path d="M256 100 C 270 100, 370 140, 370 240 C 370 330, 256 390, 256 390 C 256 390, 142 330, 142 240 C 142 140, 242 100, 256 100 Z" fill="#ef4444" stroke="#ffffff" stroke-width="14" stroke-linejoin="round"/>
+  <!-- ECG Line -->
+  <path d="M170 250 L 215 250 L 235 190 L 265 310 L 285 230 L 305 250 L 342 250" fill="none" stroke="#ffffff" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Hands / Support symbol -->
+  <circle cx="256" cy="140" r="18" fill="#ffffff"/>
+</svg>

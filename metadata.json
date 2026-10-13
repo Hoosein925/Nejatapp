@@ -1,0 +1,8 @@
+{
+  "name": "سامانه نجات",
+  "description": "برنامه آموزشی تعاملی و راهنمای فوری احیای قلبی با دست (Hands-Only CPR)، رفع انسداد راه هوایی و کار با دستگاه AED",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

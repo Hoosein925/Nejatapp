@@ -23,7 +23,7 @@ import { sound } from '../utils/sound';
 import { AppTab } from '../types';
 import { EducationalVideoPlayer } from './common/EducationalVideoPlayer';
 import { AppImage } from './common/AppImage';
-import { APP_VIDEOS, APP_IMAGES } from '../config/images';
+import { APP_VIDEOS, APP_IMAGES } from '../config/appImages';
 
 interface CPRViewProps {
   setTab: (tab: AppTab) => void;

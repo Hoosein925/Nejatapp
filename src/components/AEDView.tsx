@@ -20,7 +20,7 @@ import {
 import { sound } from '../utils/sound';
 import { AppTab } from '../types';
 import { EducationalVideoPlayer } from './common/EducationalVideoPlayer';
-import { APP_VIDEOS, APP_IMAGES } from '../config/images';
+import { APP_VIDEOS, APP_IMAGES } from '../config/appImages';
 
 interface AEDViewProps {
   setTab: (tab: AppTab) => void;

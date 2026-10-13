@@ -36,14 +36,6 @@ export const AppImage: React.FC<AppImageProps> = ({
   const displayTitle = title || meta?.title || alt;
   const displaySubtitle = subtitle || meta?.description;
 
-  // Timeout fallback if remote image stalls
-  useEffect(() => {
-    if (!isLoading || !fallbackUrl || currentSrc === fallbackUrl) return;
-    const timer = setTimeout(() => {
-      setCurrentSrc(fallbackUrl);
-    }, 3500);
-    return () => clearTimeout(timer);
-  }, [isLoading, fallbackUrl, currentSrc]);
 
   // Case 1: Custom image URL is provided and has not errored
   if (currentSrc && currentSrc.trim() !== '' && !hasError) {

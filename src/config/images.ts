@@ -4,12 +4,9 @@
  * ============================================================================
  */
 
-import localChainOfSurvival from '../assets/images/chain_of_survival.png';
-import localRecovery from '../assets/images/recovery.jpg';
-
 export const LOCAL_IMAGE_FALLBACKS: Record<string, string> = {
-  chainOfSurvival: localChainOfSurvival,
-  cprRecovery: localRecovery,
+  chainOfSurvival: '/images/chain_of_survival.png',
+  cprRecovery: '/images/recovery.jpg',
 };
 
 export const APP_IMAGES = {

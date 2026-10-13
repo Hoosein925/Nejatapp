@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
-import { getAppImage, ImageKey, IMAGE_METADATA } from '../../config/images';
+import { getAppImage, ImageKey, IMAGE_METADATA } from '../../config/appImages';
 import { ImageIcon, AlertCircle, Maximize2, X, RefreshCw } from 'lucide-react';
 
 interface AppImageProps {

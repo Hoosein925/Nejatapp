@@ -6,7 +6,7 @@ import {
   setCustomImage,
   resetAllCustomImages,
   IMAGE_METADATA,
-} from '../../config/images';
+} from '../../config/appImages';
 import {
   X,
   ImageIcon,
@@ -119,7 +119,7 @@ export const ImageManagerModal: React.FC<ImageManagerModalProps> = ({
                   className="bg-slate-200 text-sky-900 px-1.5 py-0.5 rounded font-mono font-bold"
                   dir="ltr"
                 >
-                  src/config/images.ts
+                  src/config/appImages.ts
                 </code>{' '}
                 قرار دهید.
               </p>
@@ -140,7 +140,7 @@ export const ImageManagerModal: React.FC<ImageManagerModalProps> = ({
           <div className="flex items-center gap-2">
             <FileCode className="w-4 h-4 text-sky-600 shrink-0" />
             <span>
-              فایل منبع تنظیمات در سورس‌کد: <strong>src/config/images.ts</strong>
+              فایل منبع تنظیمات در سورس‌کد: <strong>src/config/appImages.ts</strong>
             </span>
           </div>
           <div className="flex items-center gap-2">
@@ -317,7 +317,7 @@ export const ImageManagerModal: React.FC<ImageManagerModalProps> = ({
             <span>
               برای اعمال دائمی در سرور یا پروژه، آدرس‌ها را در فایل{' '}
               <strong className="font-mono text-slate-800">
-                src/config/images.ts
+                src/config/appImages.ts
               </strong>{' '}
               قرار دهید.
             </span>

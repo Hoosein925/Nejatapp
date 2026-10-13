@@ -5,9 +5,11 @@
  */
 
 import localChainOfSurvival from '../assets/images/chain_of_survival.png';
+import localRecovery from '../assets/images/recovery.jpg';
 
 export const LOCAL_IMAGE_FALLBACKS: Record<string, string> = {
   chainOfSurvival: localChainOfSurvival,
+  cprRecovery: localRecovery,
 };
 
 export const APP_IMAGES = {
@@ -18,7 +20,7 @@ export const APP_IMAGES = {
   // ۲. بخش ماساژ قلبی با دست (CPR)
   cprScene: "https://s9.uupload.ir/files/ho3in72/barnameh/%D9%85%D8%A7%D8%B3%D8%A7%DA%984404101.png",
   cprHandPlacement: "https://s9.uupload.ir/files/ho3in72/barnameh/%D9%85%D8%A7%D8%B3%D8%A7%DA%984404101.png",
-  cprRecovery: "/src/assets/images/recovery_position_safe_1791830021539.jpg",
+  cprRecovery: "https://s9.uupload.ir/files/ho3in72/barnameh/recovery.jpg",
 
   // ۳. اسلایدهای CPR
   cprStep1Safety: "",
